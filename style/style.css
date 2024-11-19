@@ -1,8 +1,66 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #482525;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('bg.png');
+    background-size: 200px;
     background-repeat: repeat;
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#bottom-ribbon {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    height: 5px;
+    transition: all 0.5s ease;
+}
+
+#bottom-ribbon:hover {
+    height: 20px;
+}
+
+.flag-section {
+    flex: 1;
+}
+
+.flag-section.red {
+    background-color: #E4312b;
+    color: #fff;
+}
+
+.flag-section.green {
+    background-color: #149954;
+    color: #fff;
+}
+
+.flag-section.black {
+    background-color: #000;
+    color: #333;
+}
+
+.flag-section.blue {
+    background-color: #99D9EA;
+    color: #fff;
+}
+
+.flag-section.pink {
+    background-color: #FFAEC9;
+    color: #333;
+}
+
+.flag-section.white {
+    background-color: #fff;
+    color: #333;
+
 }
