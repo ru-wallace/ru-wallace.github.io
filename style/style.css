@@ -1,3 +1,20 @@
+:root {
+    --content-width: 500px;
+    --bottom-ribbon-height: 10px;
+    --content-margin-top: 50px;
+
+}
+
+@media screen and (max-width: 500px) {
+   :root {     
+        --content-width: 95%;
+        --content-margin-top: 10px;
+        --bottom-ribbon-height: 40px;
+        
+   }
+}
+
+
 body {
     background-color: #482525;
     font-family: Arial, sans-serif;
@@ -6,6 +23,7 @@ body {
     background-image: url('bg.png');
     background-size: 200px;
     background-repeat: repeat;
+    height: 100vh;
 }
 
 #header {
@@ -15,19 +33,36 @@ body {
     text-align: center;
 }
 
+#content {
+    margin-top: var(--content-margin-top);
+    padding: 10px;
+    width: var(--content-width);
+    margin: 0 auto;
+    align-self: center;
+    background-color: bisque;
+    height: 100%;
+}
+
 #bottom-ribbon {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width: 100%;
     background-color: #FFF;
     display: flex;
     flex-direction: row;
-    height: 5px;
+    height: var(--bottom-ribbon-height);
+    box-shadow: 0px 0px 10px 0px #000;
     transition: all 0.5s ease;
 }
 
 #bottom-ribbon:hover {
-    height: 20px;
+    height: 40px;
+}
+
+.flag {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .flag-section {
