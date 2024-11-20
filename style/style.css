@@ -45,14 +45,22 @@ body {
 }
 
 #title {
-    flex: 1 1 auto;
+    background-color: #00000050;
     height: 100%;
+    flex: 1 1 auto;
+}
+
+.title-section {
+    
+    height: 100%;
+    width: 100%;
     display: flex;
     margin-left: auto;
     flex-direction: column;
     mix-blend-mode: screen;
-    background-color: #FFF;
+    
 
+    background-color: #FFF;
 }
 
 #title span {
@@ -117,7 +125,6 @@ body {
 .option .title {
     flex: 1;
     font-size: 3em;
-    background-color: #fff;
 }
 
 
@@ -130,7 +137,6 @@ body {
     margin-left: auto;
     margin-right: 0;
     text-align: right;
-    background-color: #fff;
     float: right;
     
 }
@@ -217,8 +223,11 @@ body {
          height: auto;
          width: 100%;
          align-items: end;
-         padding-right: 20px;
          flex: 0 0 auto;
+    }
+
+    .title-section {
+        margin-right: 0;
     }
     #title span {
         font-size: 5em;
@@ -237,6 +246,11 @@ body {
         height: 40px;
         flex-direction: row;
         margin-bottom: 0;
+    }
+
+    .option:hover {
+        transform: none;
+
     }
  
  
